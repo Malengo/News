@@ -12,13 +12,15 @@ class NewsView: UIView, ViewCodeProtocol {
     
     private(set) lazy var stackHeader: UIStackView = {
         let stack = UIStackView()
-        stack.backgroundColor = .red
+        stack.contentMode = .scaleToFill
         return stack
     }()
     
     private(set) lazy var imageHeader: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .center
+        imageView.clipsToBounds = false
+        imageView.contentMode = .scaleToFill
+        imageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         return imageView
     }()
     
@@ -108,6 +110,8 @@ class NewsView: UIView, ViewCodeProtocol {
         newsTitle.translatesAutoresizingMaskIntoConstraints = false
         
         stackHeader.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        stackHeader.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor).isActive = true
+        stackHeader.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor).isActive = true
         stackHeader.heightAnchor.constraint(equalToConstant: 400).isActive = true
         
         scrollView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor).isActive = true

@@ -117,14 +117,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       /* if collectionView == homeView.collection {
+        if collectionView == homeView.collection {
             let newsViewController = NewsViewController()
             newsViewController.news = self.news[indexPath.row]
             navigationController?.pushViewController(newsViewController, animated: true)
         } else {
             interactor?.fecthNewsByCategory(newsCategoryToppic: newsCategoryList[indexPath.row].typeCategory)
         }
-        */
     }
     
     private func setupNewsCollectionView(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {

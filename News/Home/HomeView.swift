@@ -11,7 +11,7 @@ class HomeView: UIView, ViewCodeProtocol {
     
     private(set) lazy var searchBar: UISearchBar = {
         let search = UISearchBar()
-        search.placeholder = "Digite o tema da notícia!"
+        search.placeholder = "Search News"
         return search
     }()
     
