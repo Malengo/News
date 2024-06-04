@@ -33,7 +33,7 @@ class NewsViewController: UIViewController , UINavigationControllerDelegate {
         newsView.newsContent.text = news?.content
         newsView.newsAuthor.text = news?.author
         newsView.newsDate.text = Date().formatedDate(formated: news?.publishedAt ?? "")
-        if let urlToImage =    news?.urlToImage
+        if let urlToImage = news?.urlToImage
         {
             Task {
                 let (data, _) = try await URLSession.shared.data(from: URL(string: urlToImage)!)

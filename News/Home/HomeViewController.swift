@@ -13,7 +13,7 @@ protocol HomeDisplayLogic {
 
 class HomeViewController: UIViewController {
     
-    lazy var homeView: HomeView = {
+    lazy var homeView: HomeViewProtocol = {
         let view = HomeView()
         return view
     }()
@@ -38,7 +38,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupVIP()
         setupDelegates()
-        interactor?.fecthnews(newsToppic: "Brasil")
     }
     
     override func loadView() {
@@ -46,9 +45,9 @@ class HomeViewController: UIViewController {
         view = homeView
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        interactor?.fecthnews(newsToppic: "Brasil")
     }
     
     override func viewDidDisappear(_ animated: Bool) {

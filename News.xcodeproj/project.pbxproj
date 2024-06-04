@@ -10,7 +10,6 @@
 		7D1C6D702C03D2950094F774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6D6F2C03D2950094F774 /* AppDelegate.swift */; };
 		7D1C6D722C03D2950094F774 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6D712C03D2950094F774 /* SceneDelegate.swift */; };
 		7D1C6D792C03D2990094F774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1C6D782C03D2990094F774 /* Assets.xcassets */; };
-		7D1C6D872C03D29A0094F774 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6D862C03D29A0094F774 /* NewsTests.swift */; };
 		7D1C6D912C03D29A0094F774 /* NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6D902C03D29A0094F774 /* NewsUITests.swift */; };
 		7D1C6D932C03D29A0094F774 /* NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6D922C03D29A0094F774 /* NewsUITestsLaunchTests.swift */; };
 		7D1C6DA22C03D5120094F774 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6DA12C03D5120094F774 /* HomeView.swift */; };
@@ -31,6 +30,9 @@
 		7D1C6DC32C03DB340094F774 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6DC22C03DB340094F774 /* NewsView.swift */; };
 		7D1C6DC62C03DBE20094F774 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6DC52C03DBE20094F774 /* NewsViewController.swift */; };
 		7D1C6DC92C03DC270094F774 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6DC82C03DC270094F774 /* Date-Extension.swift */; };
+		7D8FE66C2C0F663D002B5A8E /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FE66B2C0F663D002B5A8E /* HomeViewControllerTest.swift */; };
+		7D8FE66F2C0F67FD002B5A8E /* HomeViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FE66E2C0F67FD002B5A8E /* HomeViewMock.swift */; };
+		7DBB5FE02C0F855700C8B620 /* HomeViewBusinessLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBB5FDF2C0F855700C8B620 /* HomeViewBusinessLogicMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,6 @@
 		7D1C6D782C03D2990094F774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D1C6D7D2C03D29A0094F774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D1C6D822C03D29A0094F774 /* NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D1C6D862C03D29A0094F774 /* NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTests.swift; sourceTree = "<group>"; };
 		7D1C6D8C2C03D29A0094F774 /* NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1C6D902C03D29A0094F774 /* NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITests.swift; sourceTree = "<group>"; };
 		7D1C6D922C03D29A0094F774 /* NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		7D1C6DC22C03DB340094F774 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		7D1C6DC52C03DBE20094F774 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		7D1C6DC82C03DC270094F774 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		7D8FE66B2C0F663D002B5A8E /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		7D8FE66E2C0F67FD002B5A8E /* HomeViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewMock.swift; sourceTree = "<group>"; };
+		7DBB5FDF2C0F855700C8B620 /* HomeViewBusinessLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBusinessLogicMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +146,8 @@
 		7D1C6D852C03D29A0094F774 /* NewsTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D1C6D862C03D29A0094F774 /* NewsTests.swift */,
+				7D8FE66D2C0F67E4002B5A8E /* Mocks */,
+				7D8FE66B2C0F663D002B5A8E /* HomeViewControllerTest.swift */,
 			);
 			path = NewsTests;
 			sourceTree = "<group>";
@@ -228,6 +233,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7D8FE66D2C0F67E4002B5A8E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FE66E2C0F67FD002B5A8E /* HomeViewMock.swift */,
+				7DBB5FDF2C0F855700C8B620 /* HomeViewBusinessLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,6 +313,7 @@
 					};
 					7D1C6D812C03D29A0094F774 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 						TestTargetID = 7D1C6D6B2C03D2950094F774;
 					};
 					7D1C6D8B2C03D29A0094F774 = {
@@ -384,7 +399,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1C6D872C03D29A0094F774 /* NewsTests.swift in Sources */,
+				7D8FE66C2C0F663D002B5A8E /* HomeViewControllerTest.swift in Sources */,
+				7DBB5FE02C0F855700C8B620 /* HomeViewBusinessLogicMock.swift in Sources */,
+				7D8FE66F2C0F67FD002B5A8E /* HomeViewMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +608,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -599,6 +617,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.miniPc.NewsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/News.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/News";
@@ -610,6 +629,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

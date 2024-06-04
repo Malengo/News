@@ -7,15 +7,21 @@
 
 import UIKit
 
-class HomeView: UIView, ViewCodeProtocol {
+protocol HomeViewProtocol: ViewCodeProtocol {
+    var searchBar: UISearchBar { get set }
+    var collection: UICollectionView { get set }
+    var categoryCollectionView: UICollectionView { get set }
+}
+
+class HomeView: UIView, HomeViewProtocol {
     
-    private(set) lazy var searchBar: UISearchBar = {
+    lazy var searchBar: UISearchBar = {
         let search = UISearchBar()
         search.placeholder = "Search News"
         return search
     }()
     
-    private(set) lazy var collection: UICollectionView = {
+    lazy var collection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 15
@@ -29,7 +35,7 @@ class HomeView: UIView, ViewCodeProtocol {
         return collection
     }()
     
-    private(set) lazy var categoryCollectionView: UICollectionView = {
+    lazy var categoryCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
