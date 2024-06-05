@@ -5,14 +5,21 @@ Bem-vindo ao repositório do Aplicativo de Notícias. Este app é projetado para
 ## Índice
 - [Introdução](#introdução)
 - [Recursos](#recursos)
+- [Tecnologias utilizadas](#tec)
 - [Instalação](#instalação)
 - [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
 
 ## Introdução
-O Aplicativo de Notícias é construído usando Swift e visa proporcionar uma experiência perfeita para os usuários lerem e se atualizarem com as últimas notícias. Ele agrega notícias de várias fontes e as exibe de forma organizada.
+O Aplicativo de Notícias é construído usando Swift e utilizando a API [NewsAPI.org](https://newsapi.org/) para construção da lista de notícias relacionadas ao país de origem, utilizado também 
+filtros por categorias.
+Foi utilizado tecnologias nativas do desenvolvimento swift sem uso de bibliotecas de terceiros para requisição.
 
+## Tecnologias utilizadas
+- ViewCode para UI
+- VIP padrão de projeto
+- Protocols
+- UnitTests
+  
 ## Recursos
 - Obtém as últimas notícias
 - Exibe artigos com imagens e descrições
@@ -41,23 +48,3 @@ Para instalar e executar o Aplicativo de Notícias localmente, siga estes passos
 2. Compile e execute o projeto no seu dispositivo iOS preferido ou simulador.
 3. Explore os últimos artigos de notícias através da interface do app.
 
-## Contribuição
-Contribuições para o Aplicativo de Notícias são bem-vindas. Para contribuir, siga estes passos:
-
-1. Faça um fork do repositório.
-2. Crie um novo branch:
-    ```bash
-    git checkout -b feature-branch
-    ```
-3. Faça suas alterações e faça commit:
-    ```bash
-    git commit -m "Adicionar novo recurso"
-    ```
-4. Envie para o branch:
-    ```bash
-    git push origin feature-branch
-    ```
-5. Crie um pull request no GitHub.
-
-## Licença
-Este projeto é licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
