@@ -32,6 +32,7 @@
 		7D1C6DC92C03DC270094F774 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C6DC82C03DC270094F774 /* Date-Extension.swift */; };
 		7D8FE66C2C0F663D002B5A8E /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FE66B2C0F663D002B5A8E /* HomeViewControllerTest.swift */; };
 		7D8FE66F2C0F67FD002B5A8E /* HomeViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FE66E2C0F67FD002B5A8E /* HomeViewMock.swift */; };
+		7D9DD09E2C17A002007832B9 /* UINavigationControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DD09D2C17A002007832B9 /* UINavigationControllerSpy.swift */; };
 		7DBB5FE02C0F855700C8B620 /* HomeViewBusinessLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBB5FDF2C0F855700C8B620 /* HomeViewBusinessLogicMock.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		7D1C6DC82C03DC270094F774 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		7D8FE66B2C0F663D002B5A8E /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
 		7D8FE66E2C0F67FD002B5A8E /* HomeViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewMock.swift; sourceTree = "<group>"; };
+		7D9DD09D2C17A002007832B9 /* UINavigationControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerSpy.swift; sourceTree = "<group>"; };
 		7DBB5FDF2C0F855700C8B620 /* HomeViewBusinessLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBusinessLogicMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +240,7 @@
 			children = (
 				7D8FE66E2C0F67FD002B5A8E /* HomeViewMock.swift */,
 				7DBB5FDF2C0F855700C8B620 /* HomeViewBusinessLogicMock.swift */,
+				7D9DD09D2C17A002007832B9 /* UINavigationControllerSpy.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9DD09E2C17A002007832B9 /* UINavigationControllerSpy.swift in Sources */,
 				7D8FE66C2C0F663D002B5A8E /* HomeViewControllerTest.swift in Sources */,
 				7DBB5FE02C0F855700C8B620 /* HomeViewBusinessLogicMock.swift in Sources */,
 				7D8FE66F2C0F67FD002B5A8E /* HomeViewMock.swift in Sources */,
